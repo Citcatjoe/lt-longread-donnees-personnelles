@@ -1,0 +1,14 @@
+{
+	"title": "Traquer son ombre numérique – Le Temps",
+	"description": "La bataille de dix lecteurs pour leurs données personnelles. Une enquête participative du «Temps»",
+	"authors": "Florian Delafoi, Paul Ronga, César Greppin",
+	"imgSocial": "img/article/header-social.jpg",
+	"navBarStyle": "black",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+	"pubDate": "2020-10-01T11:00:00+00:00",
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.letemps.ch/"
+	}
+}

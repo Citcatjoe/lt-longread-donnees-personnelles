@@ -1,0 +1,761 @@
+{% use '_blocks.html.twig' %}
+{% use '_contrib.html.twig' %}
+
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+	{{ block('head_brand') }}
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/loader.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700, 900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700i,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/glitch.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-glitch.css" />
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script>var players = [];</script>
+
+</head>
+<body style="padding-top: {{ navBarOffset }};">
+	{{ block('bar_brand') }}
+
+	<div class="overlay">
+		<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
+		<div class="spinner">
+			<!-- <div class="double-bounce1"></div>
+			<div class="double-bounce2"></div> -->
+			<div class="sk-cube-grid">
+			  <div class="sk-cube sk-cube1"></div>
+			  <div class="sk-cube sk-cube2"></div>
+			  <div class="sk-cube sk-cube3"></div>
+			  <div class="sk-cube sk-cube4"></div>
+			  <div class="sk-cube sk-cube5"></div>
+			  <div class="sk-cube sk-cube6"></div>
+			  <div class="sk-cube sk-cube7"></div>
+			  <div class="sk-cube sk-cube8"></div>
+			  <div class="sk-cube sk-cube9"></div>
+			</div>
+		</div>
+	</div>
+
+<!-- <div class="overlay">
+<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
+<img class="logo-sponsor" src="img/logo-responsable-overlay.jpg" alt="">
+<div class="spinner" >
+<div class="double-bounce1"></div>
+<div class="double-bounce2"></div>
+</div>
+</div> -->
+
+<header>
+	<div class="header__bg"></div>
+	<div class="header__bg fab" id="canvasloader-container"></div>
+	<!-- <div class="header__gradient"></div> -->
+
+	<!-- <div class="video-wrapper">
+	<video playsinline autoplay loop muted>
+	<source src="https://player.vimeo.com/external/272224606.hd.mp4?s=0767373c2b5d80d663ef69df7f25421cf400f1e7&profile_id=175" type="video/mp4">
+	Votre navigateur ne supporte pas les vidéos HTML%.
+</video>
+</div> -->
+
+<div class="header__content">
+	<div class="header__content__container">
+		<div class="header__content__container__box">
+			<div class="glitch"><h1 class="">Traquer son ombre numérique</h1></div>
+
+			<h2 class="author">Une enquête de <span>Florian Delafoi</span> et <span>Paul Ronga</span></h2>
+			<h2 class="author">Avec l'aide de 10 lectrices et lecteurs du «Temps»</h2>
+			<!-- <h2 class="social" >
+				<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><i class="fa fa-facebook"></i></a>
+				<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><i class="fa fa-twitter fa-middle"></i></a>
+				<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><i class="fa fa-linkedin"></i></a>
+			</h2> -->
+			<!-- <div class="glitch-container" style="transform: translate(-50%, -150%);">
+				<div class="glitch" data-text="Traquer&nbsp;son">Traquer&nbsp;son</div>
+			  	<div class="glow">Traquer son</div>
+			</div>
+			<div class="glitch-container">
+				<div class="glitch" data-text="double&nbsp;numérique">double&nbsp;numérique</div>
+			  	<div class="glow">double numérique</div>
+
+			</div>
+			<div class="scanlines"></div> -->
+
+		</div>
+	</div>
+</div>
+
+
+
+<div class="scroll-indicator">
+	<div class="scroll-indicator-inner"></div>
+</div>
+
+</header>
+
+<!-- <div class="header-sponsor">
+	<a href="https://www.letemps.ch/partenariats" target="_blank">
+		<span class="charte">[?]</span>
+	</a>
+	<a href="http://www.responsables.ch/" target="_blank">
+		<img src="img/logo-responsable.png" alt="">
+	</a>
+	<span>Avec le soutien de </span>
+
+</div> -->
+
+
+
+<section class="text padding-bottom">
+	<div class="container">
+
+
+
+		<h3 style="text-transform: inherit;">La plupart des consommatrices et consommateurs ignorent leurs droits: la loi suisse prévoit que chacun puisse contrôler les informations collectées à son sujet. Avec l’aide d’un spécialiste, nous avons accompagné dix personnes dans cette démarche ardue, alors que les entreprises amassent des données toujours plus intimes
+
+			<hr>
+		</h3>
+
+		<div class="spacer-small"></div>
+		<div class="spacer-small"></div>
+
+		<h4>
+			Texte: Florian Delafoi et Paul Ronga<br>
+			<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Webdesign et animation: César Greppin<br>
+			<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Coordination: Gaël Hurlimann
+		</h4>
+
+		<p>Ce matin-là, Joséphine Mosch fredonnait une chanson au saut du lit avant de lancer l’application musicale Spotify en mode aléatoire. «Le service a joué le morceau que j’avais en tête», raconte la trentenaire, encore surprise par cette drôle de coïncidence. La célèbre plateforme serait-elle un peu trop à l’écoute de ses envies musicales? La plaisanterie se teinte de soupçon.</p>
+		<p>Au fil de l’utilisation se forme une solide base de données dans laquelle on trouve l’historique détaillé des écoutes, le type d’appareil utilisé ou encore la liste des recherches effectuées. Autant d’informations qui permettent d’adapter les suggestions musicales aux goûts et à l’humeur de l’utilisateur. «Le truc formidable avec Spotify, c’est que nous vous proposons du contenu de plus en plus personnalisé à mesure que nous en savons plus sur vous et vos habitudes d’écoute», s’enthousiasme l’entreprise suédoise.
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/j-mosch.jpg');">
+			</div>
+			<blockquote class="center">
+				<span>J’ai l’impression d’avoir plongé dans un univers qui m’a échappé</span>
+				<div class="caption"><b>JOSÉPHINE MOSCH</b>, participante à l’opération collaborative du <i>Temps</i></div>
+			</blockquote>
+		</div>
+
+		<p>Cette connaissance fine de notre personnalité suscite l’appétit des annonceurs, dont les réclames se glissent entre deux chansons dans la version gratuite du service. «J’allais dire le flicage au lieu du ciblage», ironise Joséphine Mosch. Pour gratter le vernis de la personnalisation, la Martigneraine a envoyé une demande d’accès aux informations collectées par Spotify à son sujet, comme le permet le règlement européen sur la protection des données en vigueur depuis 2018.</p>
+		<p>Cette démarche a été réalisée dans le cadre d’une opération participative du <em>Temps</em>. Comme elle, dix lectrices et lecteurs aux profils variés ont bénéficié d’un accompagnement durant plusieurs mois pour solliciter diverses entreprises, de l’acteur local au géant américain. Au total, une soixantaine de requêtes ont été envoyées.</p>
+
+		<div class="block-content left">
+			<img class="zoom lazy" data-original="img/article/conference.jpg" style="border: 1px solid rgba(255, 255, 255, 0.18);">
+			<div class="caption">Fin janvier, notre rédaction a organisé une conférence sur les données personnelles.</div>
+		</div>
+
+		<p>Le spécialiste Paul-Olivier Dehaye, fondateur de l’organisation non gouvernementale PersonalData.IO, basée à Genève, a partagé son regard acéré tout au long du projet. Paul Ronga, datajournaliste au «Temps», a également aidé les lecteurs à décrypter les données les plus obscures. Avec une question centrale: les entreprises jouent-elles le jeu de la transparence? Le citoyen peut-il vraiment reprendre le contrôle? «J’ai observé deux réactions possibles chez les participants, indique le spécialiste. Certains baissent les bras et arrivent à la conclusion que le système est pourri quand d’autres se révèlent plus combatifs en affirmant que le cadre juridique doit être respecté et multiplient les démarches.»</p>
+
+		<p>Alors que des mastodontes de la tech façonnent des algorithmes au mécanisme opaque, pister nos traces numériques permet de mieux saisir les enjeux. Nos données sont utilisées à des fins de marketing, mais pas seulement: elles peuvent se transformer en arme politique redoutable ou en puissant outil de surveillance.</p>
+
+		
+
+		<p class="encadre"><b><img src="img/article/info-icon.svg"><a id="makingof-anchor" href="#makingof">En savoir plus sur la démarche exceptionnelle qui a conduit à cet article</a></b></p>
+
+		<p>Or, «le traitement des données à caractère personnel devrait être conçu pour servir l’humanité», souligne <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679">le texte de loi européen</a>. Pour les participants, la quête s’est révélée alambiquée et décourageante. «Il est très simple d’envoyer une demande, mais obtenir une réponse claire, c’est un parcours du combattant, regrette Joséphine Mosch. Les plateformes numériques qui utilisent mes informations personnelles le font-elles à mes dépens ou à mon service? J’ai l’impression d’avoir plongé dans un univers qui m’a échappé.»</p>
+		<hr class="full"></hr>
+	</div>
+</section>
+
+
+
+
+<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+<!-- <section class="gallery hero">
+	<div class="layout">
+		<img class="zoom lazy" data-original="img/article/marche-en-berne/marche-en-berne-65-medicaments.jpg">
+		<div class="caption">
+			Les antibiotiques usuels sont impuissants contre les superbactéries.
+		</div>
+	</div>
+</section> -->
+
+<section class="">
+	<div class="container">
+		<div class="glitch2"><h3 class="yes">Les données, un carburant économique</h3></div>
+
+		<p>Nos traces numériques forment un gisement considérable. Que ce soit un réseau social ou une plateforme vidéo, la logique est la même: proposer des services attrayants pour capter l’attention des internautes. Plus les adeptes sont nombreux, plus les revenus de la société augmentent. Leur nombre, la connaissance de leurs habitudes en ligne ou de leurs pratiques de consommation forment une masse d’informations précieuses. Statistique éloquente: en 2019, chaque utilisateur de Facebook a rapporté en moyenne près de 30 dollars de revenus publicitaires, pour un total de 69,7 milliards de dollars. Des recettes en constante progression.</p>
+	</div>
+</section>
+
+
+<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+<section class="gallery big">
+	<div class="layout" style="border: 1px solid rgb(86 86 86) !important;">
+		<iframe title="Presidential Approval Ratings Since Kennedy" aria-label="Interactive line chart" src="https://datawrapper.dwcdn.net/WC50g/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="578" ></iframe>
+	</div>
+</section>
+
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+
+<section class="">
+	<div class="container">
+		<!-- <div class="glitch" data-text="Les&nbsp;données,&nbsp;un">Les&nbsp;données,&nbsp;un</div>
+		<div class="glow">Les données, un</div>
+		<div class="glitch" data-text="carburant&nbsp;économique">carburant&nbsp;économique</div>
+		<div class="glow">carburant économique</div> -->
+
+
+
+
+
+		<p>Ce mécanisme redoutable a fait naître des géants du numérique. Avec des intentions louables au premier abord. Si le client est roi, alors il convient de connaître les détails de son existence pour le servir au mieux. Le développement des outils informatiques permet d’automatiser la procédure.</p>
+
+		<h3 class="title inter-titre">Besoin de transparence</h3>
+
+		<p>«L’économie des données ne me dérange pas en soi, les entreprises peuvent essayer de gagner de l’argent avec le traçage. Elles ont également besoin de ces informations pour améliorer leur service comme leur application mobile. Ce sont des arguments recevables mais elles doivent agir avec transparence», estime Laurent Fasnacht, salarié d’une entreprise spécialisée dans la cryptographie et participant au projet du <em>Temps</em>. Lui a sollicité de nombreuses sociétés, «surtout des acteurs locaux».</p>
+		<p>Alors que l’inquiétude des citoyens grandit au rythme des scandales autour de la vie privée, les entreprises redoublent d’efforts pour afficher leur bonne foi. Elles choisissent des slogans et des formules qui rassurent sur l’utilisation des informations personnelles, tout en insistant sur les bienfaits de la personnalisation.</p>
+
+
+		<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery hero">
+			<div class="layout">
+		<img class="zoom lazy" data-original="img/article/confiance-swisscom.jpg">
+		<div class="caption">
+			Capture d'écran de la Déclaration générale sur la protection des données de Swisscom
+		</div>
+			</div>
+		</section>
+		<p></p>
+
+		<p>«La protection des données est une question de confiance, et votre confiance nous est précieuse», affirme Swisscom. «Découvrez comment contrôler les publicités qui vous sont présentées afin qu’elles soient plus utiles pour vous», encourage Facebook. «Les entreprises de transports publics utilisent vos données personnelles pour vous offrir une valeur ajoutée tout au long de la chaîne de mobilité», affirment les CFF. Cette tonalité se retrouve également dans les réponses de plusieurs entreprises à nos questions, bien souvent pour éluder des demandes délicates.</p>
+
+		<h3 class="title inter-titre">Puissance du mobile</h3>
+
+		<p>La montée en puissance des réseaux sociaux, depuis les années 2010, qui permettent d’associer des comportements à un profil précis, mais aussi l’utilisation des smartphones à tout âge ont marqué un tournant. Devenu le principal outil de consultation des plateformes numériques, le téléphone mobile permet un traçage inédit. Des services anodins – écoute de musique, jeux pour enfants – sont assortis de traceurs invisibles qui récoltent des données pour des entreprises de marketing. «Nous avons mené une enquête sur 6000 jeux pour enfants: 10% collectaient et transmettaient le numéro IMEI, soit le numéro d’identification unique du téléphone», relève Joel Reardon, chercheur en technologie de l’information à l’Université de Calgary, au Canada. Paul-Olivier Dehaye a ainsi constaté qu’une application météo livre à Amobee, un revendeur de données, un taux de «probabilité que l’utilisateur ait des problèmes de vessie».</p>
+
+
+		<!-- Ajout paul — voir si vous voulez le garder -->
+		<section class="gallery hero">
+			<div class="layout">
+				<p id="scroll-container"></p>
+				<div class="caption">
+					Vos interactions avec la page peuvent être enregistrées par des outils de mesure d’audience. (La valeur indiquée peut différer en fonction de votre matériel et de vos paramètres)
+				</div>
+			</div>
+		</section>
+
+		<p></p>
+
+		<p>«Les revendeurs de données proposent aux éditeurs d’apps d’intégrer des codes qui collectent des informations telles que les adresses MAC [identifiant unique attribué aux appareils], les connexions aux points d’accès wifi, ou encore les coordonnées GPS quand c’est possible», précise Joel Reardon. Ces données sont notamment revendues à des chaînes de magasins, qui peuvent ainsi analyser combien de temps les clients passent dans leurs commerces.</p>
+
+		<h3 class="title inter-titre">Fatigue du consentement</h3>
+
+		<p>Résultat: de nombreuses entreprises se retrouvent à gérer une masse de données qui les dépasse, sans édicter de règles appropriées pour respecter dès le départ la vie privée de leurs clients. Les réseaux de revente de données atteignent des proportions vertigineuses. Jessica Pidoux, participante à l’expérience et doctorante en humanités digitales à l’EPFL, explore cet univers dans sa thèse sur les métriques des sites de rencontre. Exemple avec <a href="https://fil.forbrukerradet.no/wp-content/uploads/2020/01/mnemonic-security-test-report-v1.0.pdf">Grindr</a>. L’application est partenaire de la régie publicitaire MoPub, elle-même liée au gigantesque réseau AppNexus. Au total, utiliser ce service revient à fournir des données à pas moins de 4259 entreprises tierces.</p>
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/vandel.jpg');">
+			</div>
+			<blockquote class="center">
+				<span>Bien souvent, les formulaires de consentement font trois kilomètres de long.</span>
+				<div class="caption"><b>JEAN-MARC VANDEL</b>, participant à l’opération collaborative du <i>Temps</i> et co-président du Parti Pirate Vaudois (Photo: Jean-Christophe Bott/Keystone)</div>
+			</blockquote>
+		</div>
+
+		<p>Dans cet écosystème, l’utilisateur ne peut que perdre le contrôle. Les spécialistes donnent un nom à cette impuissance face aux conditions générales illisibles: la fatigue du consentement. «Il faudrait rendre les formulaires de consentement plus clairs pour avoir une idée du niveau d’engagement et de partage de données. Bien souvent, ce sont des documents de trois kilomètres de long», lâche Jean-Marc Vandel, ingénieur informatique participant à notre expérience et co-président du Parti Pirate Vaudois, engagé sur la question des libertés numériques.</p>
+		<p>Plus ces données sont détaillées, plus elles permettent une diffusion ciblée des publicités. Jusqu’à atteindre la manipulation. L’affaire Cambridge Analytica, qui a éclaté en 2018, a dévoilé des pratiques abusives d’une ampleur inconcevable: cette société britannique, spécialisée dans l’analyse de données à grande échelle, a pu siphonner les informations de millions de profils Facebook. Elle se prétendait capable de reconstituer des profils psychologiques pour cibler chaque utilisateur avec des publicités politiques qui répondent au mieux à ses attentes. L’efficacité de son outil de manipulation reste controversée, mais il aurait contribué à la victoire de Donald Trump en 2016 et au Brexit.</p>
+		<p>Cambridge Analytica a été mise en faillite en 2018, mais de nombreuses sociétés proposent à la vente des profils par millions. A plus petite échelle, les entreprises s’appuient sur nos données pour nous étiqueter et mieux cibler leurs campagnes. En théorie, la collecte et le traitement des données devraient être «reconnaissables pour la personne concernée», selon la loi suisse sur la protection des données.</p>
+
+	</div>
+</section>
+
+
+<section class="padding-bottom">
+	<div class="container">
+
+		<hr class="full"></hr>
+	</div>
+</section>
+
+<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+<!-- <section class="gallery hero">
+	<div class="layout">
+		<img class="zoom lazy" data-original="img/article/marche-en-berne/marche-en-berne-58-usine.jpg">
+		<div class="caption">
+			Une entreprise pharmaceutique à Kazypalli, près d’Hyderabad, en Inde.
+		</div>
+	</div>
+</section> -->
+
+<section class="padding-bottom">
+	<div class="container">
+		<div class="glitch3"><h3 class="yes">Fichiers imbuvables et vaines relances</h3></div>
+
+		<p>Il s’est lancé avec détermination dans les démarches. «C’est parti tous azimuts, j’ai envoyé une quinzaine de demandes», confie Amédée Zryd. Installé à Denges, ce cadre d’entreprise souhaitait mesurer l’ampleur de la dissémination de ses données personnelles au gré des contrats signés et des services utilisés. L’occasion de se frotter aux limites du cadre légal. En théorie, les entreprises ont trente jours pour répondre à une demande d’accès. Dans les faits, les retards ne sont pas rares. Il faut alors patienter parfois plusieurs mois et multiplier les relances afin d’obtenir une réponse en bonne et due forme. Ce suivi demande de la persévérance et de l’énergie. Pour gagner un temps précieux, Amédée Zryd a utilisé l’interface du «Temps» pour lancer des requêtes.</p>
+		<p><b>A tester:</b> <a target="_blank" href="https://labs.letemps.ch/interactive/2020/demander-ses-donnees/">Notre générateur de demandes de données personnelles</a></p>
+		<p>«Certaines entreprises sont dépassées et font le minimum en espérant ne pas être relancées sur des points précis. Leur intérêt est complètement à l’opposé de toute transparence, sauf si cela peut affecter leur image de marque», estime le spécialiste Paul-Olivier Dehaye. La plupart finissent toutefois par apporter une réponse. «Les CFF ont fait preuve de transparence, observe Amédée Zryd. Ils m’ont envoyé un document avec l’ensemble de mes déplacements.» Un dossier transmis par voie postale: 29 pages recto verso pour remonter le temps, se souvenir de voyages anciens. Mais rien d’étonnant à ses yeux.
+
+		<!-- Ajout paul — voir si vous voulez le garder -->
+		<!-- <section class="gallery hero">
+			<div class="layout">
+				<pre id="cookie-container"></pre>
+				<div class="caption">
+					Ci-dessus, les cookies liés à cette page. «ga» correspond à l’outil de mesure d’audience Google Analytics. Un cookie «_fbp» peut s’afficher si vous êtes connecté à Facebook. Rien n’apparaît si vous bloquez les cookies.
+				</div>
+			</div>
+		</section>
+
+		<p></p> -->
+
+		<p>Ces fichiers à la présentation rudimentaire demandent une attention particulière. Il s’agit de comprendre les tableaux, les diverses annotations, le jargon de l’entreprise. «Un point m’a interpellé dans cette démarche, c’est la réception en vrac d’une pile de papiers imbuvables. Il faut une motivation importante pour creuser et comprendre ces documents bruts», regrette ce physicien de formation.</p>
+
+		<h3 class="title inter-titre">Le mystère de la classification</h3>
+
+		<p>Perdue dans ses feuilles, Sophie Sluysmans s’attarde sur un tableau détaillant ses déplacements ferroviaires. Une indication étrange a retenu son attention: «Die Profis». Pourquoi a-t-elle hérité de l’étiquette de «professionnelle»? Est-ce en raison de ses trajets réguliers pour se rendre au travail? Les CFF ne fournissent aucune note explicative, de quoi interroger la Belge, doctorante à l’Université de Genève. «Au-delà de la signification du mot, il est important de comprendre les conséquences pour l’utilisateur de cette catégorisation, souligne Paul-Olivier Dehaye. Il faut une transparence sur les critères qui permettent à l’algorithme de classer quelqu’un dans cette catégorie et à quelles fins elle a été créée.»</p>
+
+		<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery hero">
+			<div class="layout">
+		<img class="zoom lazy" data-original="img/article/cff.jpg" style="border: 1px solid rgba(255, 255, 255, 0.18);">
+		<div class="caption">
+			L’application des CFF fournit des données de ses utilisateurs aux services publicitaires de Google, selon la RTS (Photo: Peter Klaunzer/Keystone)
+		</div>
+			</div>
+		</section>
+		<p></p>
+
+		<p>Une hypothèse se dessine: la personnalisation de campagnes promotionnelles. Elle semble se consolider après lecture de la déclaration de protection des données disponible sur le site de la compagnie: «Si nous connaissons vos achats, tels que les billets ou les abonnements, seules des offres pertinentes arrivent dans votre boîte e-mail». Ou encore: «Si vous vous inscrivez sur CFF Mobile, vous recevez des offres qui correspondent à vos habitudes de voyage». Contactée, la porte-parole des CFF Sabine Baumgartner précise que ces classifications sont seulement réalisées «pour nos propres mesures de marketing». La répartition entre les différents segments se fait selon plusieurs critères: être titulaire d’un abonnement au cours des cinq dernières années, la classe de l’abonnement, l’âge du client et son genre.</p>
+		<p>Cet écosystème n'est pas totalement hermétique. Dans le cadre d’un contrat publicitaire, les CFF communiquent à Google des données telles que le lieu de départ, le lieu d’arrivée, la date, la classe et l’âge. D’après un test effectué par l’émission <a href="https://www.rts.ch/info/sciences-tech/11370535-lapplication-cff-fournit-des-donnees-de-ses-utilisateurs-a-google.html" target="_blank"><em>A bon entendeur</em></a> de la RTS, il est possible d’identifier une personne en croisant ces données avec celles de son compte Google. Interpellée à ce sujet, l'ancienne régie fédérale ne change pas sa ligne. «Il s’agit de données personnelles non identifiables, selon une porte-parole. Un nombre limité de données est transféré par l’application CFF de manière anonymisée, ce transfert de données ne permet pas de remonter à une personne précise.»</p>
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/amedee_ok.jpg');">
+			</div>
+			<blockquote class="center">
+				<span>Il faut une motivation importante pour creuser et comprendre ces documents bruts.</span>
+				<div class="caption"><b>AMÉDÉE ZRYD</b>, participant à l’opération collaborative du <i>Temps</i></div>
+			</blockquote>
+		</div>
+
+		<p>Joséphine Mosch admet avoir un faible pour l’offre pléthorique de Zalando. Son engouement pour le géant allemand de la mode en ligne n’a pas échappé à la machine informatique de l’entreprise. «J’ai remarqué que Zalando m’avait attribué le statut VIP et je me questionne sur cette catégorie. Qu’est-ce que cela veut dire? Est-ce dû au volume de commandes, au montant des transactions, à leur régularité, à la rapidité de traitement de la facture ou tout ça en même temps?» Les questions fusent.</p>
+		<p>Chargée de communication pour le groupe, Nadine Vazhayil ne dévoile pas les critères de la collecte. Elle insiste sur ses bénéfices: «Nous voulons offrir un confort optimal et approfondir les relations avec notre clientèle grâce à des services sur mesure. Les clients réguliers accèdent à une plateforme plus personnalisée, notamment lorsqu’il s’agit de suggérer des tendances et de recommander des tailles.»</p>
+
+		<h3 class="title inter-titre">La piste perdue du traçage</h3>
+
+		<p>Cette volonté de personnalisation ne se limite pas aux services numériques, elle peut s’inviter dans le monde réel. De simples émetteurs Bluetooth, appelés <em>beacons</em>, permettent d’amasser des données sur ce qui les entoure. Un commerçant peut équiper sa boutique pour mieux connaître ses clients, leur parcours dans les rayons ainsi que les objets devant lesquels ils s’attardent.</p>
+		<p>«Grâce à ces petites boîtes, vous pourrez en savoir plus sur les clients qui passent la porte de vos boutiques», se réjouissait en 2014 <em>Swisscom Magazine</em>, publication destinée aux clients de l’entreprise. L’opérateur téléphonique ne cachait pas son intérêt pour cette technologie dans son rapport annuel de 2015, outil alors présenté comme un «projet d’innovation en cours». Quand Joséphine Mosch a reçu un tableau contenant son identité, la localisation d’une boutique, une date de visite, des produits accompagnés de leur numéro de référence, elle a tout de suite fait le rapprochement.</p>
+		<p>«Un potentiel intérêt de ma part a été enregistré pour toute une quantité de services disponibles dans un Swisscom Shop. Je vous en partage le détail en pièce jointe, avec des parties grisées qui concernaient les données privées», écrit-elle dans un courriel accompagné du fameux fichier.</p>
+		<p>Un Nokia Lumia 820 Black 4G, un iPhone 4S 8GB Black ou encore un Swissvoice ePure noir: la liste contient des dizaines de références. S’agit-il de produits qu’elle aurait pu approcher pendant sa visite?</p>
+
+			<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery hero">
+			<div class="layout">
+		<img class="zoom lazy" data-original="img/article/tracking.png" style="border: 1px solid #ffffff2e;">
+		<div class="caption">
+			Capture d'écran d'un extrait du tableau envoyé par Swisscom à Joséphine Mosch
+		</div>
+			</div>
+		</section>
+		<p></p>
+
+		<p>Nicolas Passadélis, responsable des données chez Swisscom, assure que l’entreprise «n’utilise pas d’émetteurs Bluetooth dans ses points de vente». Après plusieurs échanges de courriels, la porte-parole de Swisscom Alicia Richon confirme qu’aucun traçage des mouvements n’est réalisé. «Non, la technologie Bluetooth n’a jamais été utilisée dans nos <em>shops</em>, du moins personne n’a pu m’en dire plus sur cela et il n’est pas planifié de le faire.» La représentante invite les clients concernés à s’adresser directement à leur service juridique pour déterminer «quelles données ont pu être collectées, à quel moment et avec quelles technologies».</p>
+		<p>Cette démarche individuelle se révèle troublante. Par ce biais, Joséphine Mosch apprend que les informations proviennent du système de caisse enregistreuse et correspondent donc à des achats effectués dans la boutique. Impossible, selon elle: «Cela me semble complètement farfelu, je ne connaissais même pas l’existence de certains produits!» Dans son courriel, Swisscom écarte l’hypothèse d’enregistrements basés sur la technologie Bluetooth avant d’admettre ne pas disposer de «plus de détails sur le déroulement» de sa visite dans un magasin à Sierre, en novembre 2013.</p>
+		<p>Des données anciennes et à l’origine mystérieuse. De quoi interloquer cette salariée d’une entreprise qui applique des règles strictes en matière de confidentialité: «Quand une personne est embauchée, ou si son dossier n’est pas retenu, nous avons un processus de destruction des données. Quel est l’intérêt pour Swisscom de conserver aussi longtemps des données sur tel appareil ou telle coque que j’ai observés dans un magasin il y a sept ans?» Malgré nos recherches et l’aide de spécialistes, impossible de comprendre comment Swisscom a collecté ces informations sans utiliser de <em>beacons</em>.</p>
+
+		<h3 class="title inter-titre">Un climat de suspicion</h3>
+
+		<p>En l’absence de réponses claires de certaines entreprises, il faut bien souvent se contenter d’un faisceau d’indices. «Selon moi, ce n’est pas un problème d’en rester à des suppositions sur leurs pratiques tant qu’elles permettent de placer le sujet dans le débat public, note Paul-Olivier Dehaye. Cela contribue à mettre une pression sur les sociétés pour qu’elles fassent preuve de plus de transparence.» Ces zones d’ombre qui se forment entre les lignes d’un fichier aride alimentent toutefois une certaine défiance.</p>
+
+		<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery hero">
+			<div class="layout">
+		<img class="zoom lazy" data-original="img/article/prodis.jpg" style="border: 1px solid rgba(255, 255, 255, 0.18);">
+		<div class="caption">
+			Capture d'écran d'un extrait de la lettre de Prodis
+		</div>
+			</div>
+		</section>
+		<p></p>
+
+		<p>«L’entreprise de sécurité Prodis a répondu à ma demande d’accès par le simple envoi d’une copie de sa politique de confidentialité… Je dois admettre que je ne m’attendais pas à cela», lâche Stéphane Droxler, fondateur d’une société de conseil en matière de données numériques. Depuis 2005, elle lui fournit un système d’alarme composé d’une console de gestion et de détecteurs de mouvements. Le tout est relié à une centrale: «Ils peuvent savoir qui rentre dans la maison car chaque membre de la famille possède son propre badge.»</p>
+		<p>Pourquoi la société n’a-t-elle pas transmis ces données intimes? «Nous donnons une suite systématique aux demandes d’accès par l’envoi des données techniques, affirme au <em>Temps</em> le responsable de la communication, Stephan Jean, qui s’étonne de la fin de non-recevoir vécue par notre lecteur. Notre clientèle peut évidemment, conformément au cadre légal, accéder en tout temps aux données qu’elle nous livre.» Stéphane Droxler a finalement obtenu une réponse, qu’il juge incomplète, cinq mois après sa demande initiale. Il attend des garanties suffisantes pour renouveler son contrat.</p>
+		<p>Si une entreprise ne donne pas suite à une requête, une action civile peut être ouverte, mais cela implique des frais de justice. Dans certains cas, la démarche peut être gratuite si la demande est faite sur la base d’un contrat de consommateur. Enfin, le préposé fédéral à la protection des données peut être contacté, mais ses recommandations (publiées le plus souvent <a href="https://www.edoeb.admin.ch/edoeb/de/home/oeffentlichkeitsprinzip/empfehlungen/empfehlungen-2020.html">en allemand</a>) ne sont pas contraignantes et il ne peut ouvrir une enquête que si une méthode de traitement est susceptible de porter atteinte à la personnalité d’un grand nombre de personnes.</p>
+
+		<h3 class="title inter-titre">Remonter le fil des entreprises tierces</h3>
+
+		<p>L’entrepreneuse Nathalie Veysset a participé à l’opération à la fois pour découvrir l’étendue de sa propre trace numérique et pour tester l’attitude des services tiers utilisés par la société de commerce en ligne qu’elle a cofondée. «A l’interne, nous avons établi des garde-fous et une éthique en matière de vie privée. Mais nous ne pouvons compter que sur les déclarations de nos fournisseurs de services, sans pouvoir réellement vérifier ce qu’ils font des données de nos utilisateurs, ni si eux-mêmes s’appuient sur d’autres fournisseurs.»</p>
+		<p>Le résultat de ses démarches est mitigé. Plusieurs mois après ses requêtes et relances, la banque en ligne Revolut et l’entreprise de marketing ActiveCampaign n’ont pas réagi. En revanche, les Transports publics genevois et Swisscom lui ont transmis ses données. «Ils captent beaucoup d’informations dont on se demande si elles leur sont vraiment nécessaires, relève-t-elle. Les géolocalisations sont nombreuses, mais rien n’est précisé sur les services qui les exploitent.»</p>
+
+		<h3 class="title inter-titre">Barrières et résignation</h3>
+
+		<p>Plusieurs participants ont fait part de leur résignation, à l’image de Cristina Machado. «Si on n’est pas vraiment outillé ou accompagné d’un juriste pour déchiffrer les informations, on peut facilement être découragé, regrette la sexagénaire. Ce fonctionnement peut être interprété comme une volonté de ne pas dévoiler les pratiques de traçage. Il est impossible de savoir si les données transmises sont exhaustives ou si les entreprises détiennent d’autres informations sensibles.»</p>
+		<p>Une particularité suisse peut nourrir ce climat de suspicion: la plupart des fichiers ne sont pas traduits pour la clientèle romande. «J’ai reçu des documents rédigés en allemand accompagnés d’une lettre en français, pratique!» ironise Cristina Machado au sujet d’une requête envoyée à PostFinance. Même constat pour Sophie Sluysmans, une habituée de l’offre d’Yves Rocher: «Tout est en allemand, sauf le courrier joint.»</p>
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/machado.jpg');">
+			</div>
+			<blockquote class="center">
+				<span>J’ai reçu des documents en allemand, pratique!</span>
+				<div class="caption"><b>CRISTINA MACHADO</b>, participante à l’opération collaborative du <i>Temps</i></div>
+			</blockquote>
+		</div>
+
+		<p>Comment expliquer cette carence? «Actuellement, les exportations des systèmes respectifs sont principalement en allemand. Les traduire prendrait trop de temps. Mais nous vérifions constamment nos processus», indique Johannes Möri, porte-parole de PostFinance. «Nos clients francophones reçoivent une partie de l’information en français. Cependant, comme nos bases de données sont gérées en allemand, les données elles-mêmes ne sont disponibles qu’en allemand», reconnaît Ottavia Masserini, son homologue des CFF.</p>
+		<p>Un motif informatique qui a l’allure d’un obstacle au droit d’accès. Paul-Olivier Dehaye relativise: «Cette difficulté de compréhension existe aussi à l’échelle européenne si, par exemple, un résident français demande ses données à une entreprise polonaise.» Il ajoute: «Cette complexité invite au développement de standards dans une optique de réduction des coûts et d’harmonisation des pratiques à l’échelle du marché européen.» Une harmonisation qui pourrait chasser quelques doutes.</p>
+
+		<hr class="full"></hr>
+	</div>
+</section>
+
+<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+<!-- <section class="gallery hero">
+	<div class="layout">
+		<img class="zoom lazy" data-original="img/article/hyderabad/Hyderabad-63.jpg">
+		<div class="caption">
+			Au nord et à l’ouest d’Hyderabad s’étend la Pharma Valley, un labyrinthe d’usines pharmaceutiques où il est impossible de pénétrer.
+		</div>
+	</div>
+</section> -->
+
+<section class="padding-bottom">
+	<div class="container">
+
+		<div class="glitch4"><h3 class="yes">Une protection imparfaite</h3></div>
+
+		<p>«Il faudrait effectuer un grand travail de vulgarisation, tant sur le plan technique que juridique, bénéficier d’un accompagnement au moment de la réception des données personnelles. Une fois obtenues, qu’est-ce que j’en fais? Tout ce suivi, je ne touche pas le puck!» s’exclame la participante Joséphine Mosch. Quel article de loi peut-on brandir? Doit-on invoquer le règlement européen dans sa requête? Au fur et à mesure de l’expérience, les dix lecteurs se sont trouvés pris dans un enchevêtrement de situations hétérogènes et de législations touffues.</p>
+		<p>La loi suisse sur la protection des données (LPD) a été instaurée en 1992, quatre ans avant la première directive européenne en la matière. «Elle a été discutée dès les années 1980. Le scandale des fiches dans les années 1989-1990 a accéléré son adoption», contextualise Livio di Tria, doctorant en droit à l’Université de Lausanne et candidat à notre enquête participative. Dans un monde toujours plus connecté, ce texte a toutefois pris la poussière. Le Conseil fédéral a présenté en 2017 un projet de révision totale de la LPD. Après d’ultimes discussions au parlement en septembre 2020, la révision pourrait entrer en vigueur en janvier 2022 si elle ne fait pas l’objet d’un référendum. En attendant, les acteurs économiques évoluent dans ce flou de circonstance.</p>
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/livioditria.jpg');">
+			</div>
+			<blockquote class="center">
+				<span>Ce qui me frappe le plus, ce sont les disparités entre les entreprises.</span>
+				<div class="caption"><b>LIVIO DI TRIA</b>, participant à l’opération collaborative du <i>Temps</i> et doctorant en droit à l'Université de Lausanne</div>
+			</blockquote>
+		</div>
+
+		<p>Depuis quatre ans, Livio di Tria demande ses informations personnelles à des entreprises: «Le droit d’accès a un rôle préventif et de contrôle, mais il permet surtout de garantir la transparence des traitements. Je suis bien conscient qu’il est plus facile d’exercer une demande de droit d’accès que d’y répondre, tant cette réponse nécessite d’avoir les bons réflexes, une bonne gouvernance d’entreprise et d’avoir été préalablement sensibilisé.» Cette matière alimente sa thèse sur le droit suisse et européen en matière de protection des données dans le cadre de la publicité en ligne. «Ce qui me frappe le plus, ce sont les disparités entre les entreprises. J’ai dû réitérer mes demandes pour que la boutique en ligne Digitec m’envoie les données me concernant en lien avec l’analyse du comportement de la clientèle. Migros, qui analyse également le panier d’achat de ses clients via son programme de fidélité Cumulus, envoie ces mêmes données mais sans expliquer les différentes catégories.»</p>
+
+		<h3 class="title inter-titre">L’obstacle de la pièce d’identité</h3>
+
+		<p>Ces disparités instillent le doute. Une entreprise peut-elle, par exemple, exiger l’envoi d’une copie de la pièce d’identité du demandeur? «Au moment de l’envoi de ma requête, Salt m’a demandé de remplir un formulaire en joignant une copie de ma carte d’identité. J’ai laissé tomber… Je me suis rendu compte que, malgré la loi, rien n’est fait pour faciliter les demandes d’accès», regrette le militant Jean-Marc Vandel. Une telle exigence répond pourtant à un point de la LPD. Le maître du fichier doit prendre «des mesures adéquates afin d’assurer l’identification de la personne concernée et de protéger ses données de tout accès de tiers non autorisés lors de la communication des renseignements», peut-on lire <a href="https://www.edoeb.admin.ch/edoeb/fr/home/protection-des-donnees/generalites/le-droit-d_acces.html">sur le site du préposé fédéral</a>.</p>
+		<p>A l’échelle européenne, cette vérification ne doit pas imposer une charge disproportionnée. C’est en tout cas la lecture de l’organisation <a href="https://privacyinternational.org/long-read/3857/2020-facebook-users-odyssey">Privacy International</a>, qui prend un exemple délicat pour défendre sa position: «Si vous n’avez utilisé votre adresse électronique et votre pseudonyme que pour vous inscrire à un service en ligne, pourquoi ce service vous demanderait-il une copie de votre passeport pour vérifier votre identité, s’il ne disposait pas de ces données au départ?»</p>
+		<p>De quoi refroidir bien des citoyens avertis. «Ce ne sont pas des obstacles à minimiser, soutient Paul-Olivier Dehaye. Il existe une telle asymétrie entre la personne qui demande ses données et l’entreprise concernée que la moindre friction va amplifier ce déséquilibre. C’est loin d’être anodin. Je place la responsabilité de ces obstacles en partie sur les entreprises, quoique certaines aient des raisons légitimes de faire preuve de prudence. Une série d’abus est possible.»</p>
+		<p>Laurent Fasnacht craint justement de perdre la maîtrise de son existence numérique: «Cela peut être très facile d’obtenir ce type de fichier sur le web avec les attaques informatiques. Une personne malintentionnée pourrait voler mon identité en formulant plusieurs requêtes à ma place.» Le préposé fédéral propose une idée créative pour éviter ce scénario catastrophe lors d’une demande d’accès: gommer des éléments sensibles, comme la taille, la photo ainsi que le numéro du document d’identité. Selon les travaux académiques de Livio di Tria, l’entreprise devrait détruire le fichier aussitôt l’authentification du demandeur effectuée. Une alternative pourrait éviter cet envoi délicat: la mise à disposition d’un questionnaire pour vérifier la connaissance de plusieurs éléments personnels, comme la référence d’une facture ou le numéro client.</p>
+
+		<h3 class="title inter-titre">L’ombre d’une sanction</h3>
+
+		<p>Additionnées, les identités numériques forment une matière explosive. L’affaire retentissante de Cambridge Analytica a montré le danger que représente cette économie pour la vie privée et la bonne marche démocratique d’un pays. «Nous n’avions pas besoin de ce scandale pour comprendre les pratiques d’un réseau social comme Facebook. Je déteste quand la politique court derrière les événements», lance au téléphone Viviane Reding, ancienne vice-présidente de la Commission européenne, chargée de la justice et des droits fondamentaux.</p>
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/viviane-reding.jpg');">
+			</div>
+			<blockquote class="center">
+				<span>Je déteste quand la politique court derrière les événements.</span>
+				<div class="caption"><b>VIVIANE REDING</b>, ancienne vice-présidente de la Commission européenne et architecte du RGPD (Photo: Thierry Roge/Reuters)</div>
+			</blockquote>
+		</div>
+
+		<p>L’architecte du RGPD défend l’idée d’un cadre juridique fort, seul à même de faire bouger les lignes. La législation européenne permet d’infliger une amende allant jusqu’à 4% du chiffre d’affaires annuel de l’entreprise incriminée. Mais les interprétations locales tendraient à affaiblir cet instrument: «A mon avis, il y a beaucoup trop de latitude donnée aux régulateurs nationaux. J’ai l’impression que ces derniers ne font pas toujours de zèle et il faudra donc une réforme pour revenir à mon idée originelle: un continent, une loi. Le régulateur européen doit porter des coups importants», appuie la membre du Parti populaire chrétien-social, au Luxembourg.</p>
+		<p>Selon le cabinet DLA Piper, qui se base sur les informations des autorités de contrôle, plus de 160 000 incidents ont été signalés entre mai 2018 – date de l’introduction du RGPD – et janvier 2020. Montant engendré par les amendes: 114 millions d’euros, selon les estimations des auteurs du rapport. Un montant qu’ils jugent faible. «Un tel dispositif légal n’existait nulle part ailleurs, il est donc normal que des difficultés apparaissent, on investissait un terrain vierge, rappelle Viviane Reding. Or, aujourd’hui, le numérique est un enjeu parfaitement identifié. La législation pourrait se renforcer, c’est normal, c’est le cours des choses.»</p>
+
+		<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery hero">
+		<div class="layout">
+		<img class="zoom lazy" data-original="img/article/kks.jpg" style="border: 1px solid rgba(255, 255, 255, 0.18);">
+		<div class="caption">
+			Pour Karin Keller-Sutter, cheffe du Département fédéral de justice et police, un échec de la loi aurait surtout nui aux entreprises. (Photo: Alessandro della Valle/Keystone)
+		</div>
+		</div>
+		</section>
+		<p></p>
+
+		<p>La question des sanctions crispe justement le débat en Suisse. Parmi les modifications proposées dans la révision de la loi apparaît le plafonnement de l’amende en cas de violation à 250 000 francs, contre les 500 000 francs proposés dans l’avant-projet. «Autant dire que l’effet dissuasif voulu n’est pas atteint», maugrée <a href="https://www.frc.ch/protection-des-donnees-des-amendes-risibles/">la Fédération romande des consommateurs</a>. Une sanction qui, de surcroît, frapperait les personnes physiques, et non directement les entreprises. Robin Eymann, chargé de la politique économique à la FRC, regrette également que les pouvoirs du préposé fédéral à la protection des données n'aient pas été plus étendus. «Le régulateur ne peut prononcer d’amendes, ce qui limite encore plus l'effet dissuasif. Il détient moins de compétences que ses homologues étrangers, même avec la révision de la loi.»</p>
+		<p>«L’Union européenne utilise sa force économique pour exporter les instruments du RGPD, souligne Viviane Reding. Aucun pays lié économiquement avec l’Europe ne peut ignorer ce cadre juridique. Les entreprises suisses n’ont d’autre choix que de s’y conformer à partir du moment où elles entretiennent une relation commerciale avec un pays membre.» S’il salue l’existence de cet instrument, l’avocat genevois Nicolas Capt y voit une lourde charge pour les petites structures: «Elle soumet peu ou prou au même régime la PME qui vend en ligne du crottin de Chavignol et Facebook qui mine nuit et jour des données en masse et en fait son beurre.» Il s’inquiète toutefois d’un possible retard dans la mise en conformité de certains acteurs locaux, pourtant cruciale pour préserver la confiance des consommateurs: «Il est plus coûteux d’agir dans l’urgence. Mais, pour l’instant, le cadre suisse allégé ne fait peur à personne. C’est un tigre de papier.»</p>
+
+		<hr class="full"></hr>
+	</div>
+</section>
+
+
+<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+<!-- <section class="gallery hero">
+	<div class="layout">
+		<img class="zoom lazy" data-original="img/article/hyderabad/Hyderabad-8.jpg">
+		<div class="caption">
+			Le lac Ammayi Cheruvu, sur fond d’usines pharmaceutiques, dans la région d’Hyderabad.
+		</div>
+	</div>
+</section> -->
+
+<section>
+	<div class="container">
+		<div class="glitch5"><h3 class="yes">La difficile prise de conscience</h3></div>
+
+		<p>Le numérique a ouvert un séduisant champ des possibles. Notre personnalité se déploie sur des interfaces ludiques, nos connaissances amicales ne sombrent plus dans l’oubli, des produits sont à portée de clic. Bref, nos vies gagnent en fluidité. Un mouvement irrésistible qui masque les limites et les dangers d’un tel écosystème. «On explique aux enfants de ne pas adresser la parole à un inconnu. Pour le numérique, c’est un peu la même chose. On doit apprendre aux gens à ne pas livrer trop d’informations personnelles, déclare Laurent Fasnacht. Dans mon entourage, peu de personnes font preuve de prudence. Je ne suis pas très optimiste.»</p>
+		<p>Cette forme d’insouciance tranche avec un courant critique qui s’exprime depuis des décennies. En 1993, le mathématicien américain Eric Hughes, considéré comme l’un des fondateurs du mouvement Cypherpunk, publie un manifeste en faveur d’une préservation de la vie privée face à l’appétit technologique de gouvernements et d’entreprises. Un discours longtemps marginalisé tant les promesses du numérique accaparaient le débat. Aujourd’hui, ce discours revient au premier plan, porté par des activistes du monde entier. Les récents scandales renforcent leur visibilité. Certains revêtent les habits du lanceur d’alerte, comme Christopher Wylie, ancien employé de Cambridge Analytica à la chevelure colorée et au témoignage volcanique.</p>
+
+		<h3 class="title inter-titre">Stratégie des petits pas</h3>
+
+		<p>Paul-Olivier Dehaye fait partie de cette galaxie de citoyens engagés dont l’expertise intéresse la classe politique. Comme Christopher Wylie, il a témoigné devant une commission du parlement britannique sur la face sombre de Facebook.</p>
+	</div>
+</section>
+
+<!-- SECTION VIDEO -->
+<section class="video" style="background: #061423;">
+	<div class="video-wrapper" style="border: 1px solid rgba(255, 255, 255, 0.18);">
+		<div class="trigger"></div>
+		<video controls poster="img/article/poster-video.png">
+		  <source src="https://player.vimeo.com/external/462952284.sd.mp4?s=533e45eed5fcb109d34c02632af874d847671817&profile_id=164" type="video/mp4">
+		  Votre navigateur ne supporte pas les vidéos HTML%.
+		</video>
+	</div>
+</section>
+
+<section class="">
+	<div class="container">
+
+		<p>Son travail ne se résume pas à des affaires spectaculaires. Le mathématicien belge mise également sur une stratégie des petits pas. Selon lui, chaque prise de conscience individuelle peut changer la donne: «Il ne faut pas tant de gens impliqués pour changer les processus d’entreprises et faciliter la démarche pour les suivants. C’est un cercle vertueux ou vicieux. Si on n’utilise pas ces droits, ils risquent de mourir.»</p>
+		<p>Cette approche prend forme avec son projet PersonalData.IO, qui fournit une «boîte à outils» pour formuler des requêtes auprès des entreprises, et MyData, une organisation qui incite les citoyens d’une quarantaine de pays à se rassembler pour reprendre le contrôle de leurs données. «Selon moi, c’est maintenant qu’il faut exercer son droit d’accès et ne pas lâcher, insiste-t-il. C’est un outil essentiel pour comprendre l’environnement numérique dans lequel on évolue.» Au cours de notre enquête participative, les participants ont tous mesuré l’importance du sujet. Autre signe d’un début de prise de conscience: certaines des entreprises contactées disent recevoir toujours plus de demandes d’accès.</p>
+		<p>Mais la démarche reste peu connue du grand public. «La plupart des gens à qui j’en parlais étaient étonnés d’avoir ce droit, souligne Cristina Machado. Ensuite, ils sont perdus, parce qu’ils ne savent pas comment faire.» Et la démarche a ses limites. «On ne sait pas exactement quelles entreprises tierces ont accès aux données et comment elles les traitent, relève Nathalie Veysset, participante à l’opération et cofondatrice d’une plateforme de commerce en ligne. C’est une toile d’araignée, on ne sait pas où le partage des données s’arrête.» Enfin, obtenir ses données participe à une prise de conscience mais ne permet pas d’en reprendre le contrôle.</p>
+
+		<hr class="full"></hr>
+	</div>
+</section>
+
+<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+<!-- section class="gallery small">
+	<div class="layout">
+		<img class="zoom lazy" data-original="img/article/hyderabad/Hyderabad-36.jpg">
+		<div class="caption">
+			<b>KASULA VENKATA KRISHNA REDDY</b> voit passer chaque jour des dizaines de malades.
+		</div>
+	</div>
+</section>
+
+<section class="padding-bottom">
+	<div class="container">
+
+		<div class="block-content right">
+			<img class="zoom lazy" data-original="img/article/bobines/bobines-3-Krishna-Rahul.jpg" src="img/article/bobines/bobines-3-Krishna-Rahul.jpg" style="display: block;">
+			<div class="caption"><b>LE DOCTEUR KRISHNA V. RAHUL</b>, dans son cabinet près d’Hyderabad.</div>
+		</div>
+
+
+	</div>
+</section>
+
+
+
+<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+<!-- <section class="gallery hero">
+	<!-- div class="layout">
+		<img class="zoom lazy" data-original="img/article/hyderabad/Hyderabad-19.jpg">
+		<div class="caption">
+			Un puits utilisé par les marchands d’eau du lac Gandigudem, près d’Hyderabad, en Inde.
+		</div>
+	</div>
+</section> -->
+
+
+<section class="">
+	<div class="container">
+		<div class="glitch6"><h3 class="yes">Contrôler et compartimenter</h3></div>
+
+		<p>Deux des participants de notre opération sont parvenus à limiter largement la fuite de leurs données, chacun à sa manière. Charles Simond, désormais à la retraite, achetait des adresses postales pour démarcher des clients dans le cadre de son travail: «Le principe était le même, plus on recherchait des profils précis, plus c’était cher.» Modérée, son activité en ligne passe par un géant incontournable: Google. Sa requête auprès de ce dernier lui a permis d’obtenir des données banales: «Un dossier Google Maps contient la localisation de mon domicile et une localisation datant de 2014. Je retrouve des vidéos que j’ai visionnées sur YouTube depuis 2011, mes e-mails, mon carnet d’adresses, probablement parce que j’ai accepté de partager mes contacts.» Dans l’ensemble, «rien de significatif».</p>
+
+		<div class="neon-quote">
+			<div class="medaillon glitch-img" style="background-image: url('img/article/portrait-simond.jpeg');">
+			</div>
+			<blockquote class="center">
+				<span>Un dossier Google Maps contient la localisation de mon domicile.</span>
+				<div class="caption"><b>CHARLES SIMOND</b>, participant à l'opération collaborative du <i>Temps</i></div>
+			</blockquote>
+		</div>
+		<p>Même résultat, mi-décevant, mi-rassurant, pour le virtuose de l’informatique Laurent Fasnacht. «Ma solution, c’est de contrôler en amont les données que je fournis. D’une part, j’en donne le moins possible. D’autre part, je les compartimente: il est difficile de recouper mes différents comptes et comportements en ligne.» L’informaticien utilise notamment des machines virtuelles, des environnements de travail temporaires qu’il peut supprimer après utilisation. Une précaution radicale qui n’est pas à la portée de tout le monde.</p>
+
+		<h3 class="title inter-titre">Course pour la vie privée</h3>
+
+		<p>Pour les géants de la tech que sont Apple et Google, le respect de la vie privée est devenu un argument commercial. De version en version, leurs systèmes d’exploitation pour smartphone deviennent plus stricts en matière de confidentialité. Depuis iOS 14, Apple bloque même l’identification publicitaire si l’utilisateur ne l’accepte pas explicitement. Un coup dur pour les entreprises de marketing.</p>
+		<p>Mais Apple et Google ne corrigent pas rétroactivement les failles de confidentialité de leurs systèmes d’exploitation. De nombreux smartphones équipés de vieilles versions d’Android ne permettent pas d’empêcher la géolocalisation. «L’intimité est un luxe: pour en bénéficier, il faut un téléphone neuf», souligne Joel Reardon, spécialiste des failles en matière de vie privée.</p>
+		<p>Facebook fait aussi des efforts: paramètres de confidentialité détaillés, affichage d’explications sur le ciblage de chaque publicité. Spotify permet également de limiter le traçage. Joséphine Mosch a testé ces options: «J’ai fini par désactiver plusieurs paramètres de suivi. Le problème, c’est que le service ne retient plus aussi bien mes habitudes d’écoute, on se coupe d’une certaine fluidité.»</p>
+
+		<h3 class="title inter-titre">Déconnexion illusoire</h3>
+
+		<p>Pour échapper au traçage, pourquoi ne pas débrancher complètement? Ou renoncer aux réseaux sociaux? Mais aussi aux boutiques en ligne et aux messageries gérées par Google, Facebook, Apple? Et à la géolocalisation? «Les applications des CFF et des Transports publics genevois sont conçues pour se référer à notre position, rappelle Nathalie Veysset. Si je veux calculer rapidement mon itinéraire, je suis tracée.»</p>
+		<p>La décision de disparaître totalement du web a traversé l’esprit de certains participants de l’opération, mais aucun n’a franchi le pas. Pour une raison évidente: le numérique irrigue tous les aspects de leur vie. Ils ne veulent pas «devenir un homme des cavernes», comme le résume l’informaticien Jean-Marc Vandel en un sourire. Et Cristina Machado de résumer ce dilemme illusoire: «Si on veut échapper à la collecte de nos données, on est marginalisé.»</p>
+
+	</div>
+</section>
+
+
+<section class="padding-bottom">
+	<div class="container">
+
+
+</div>
+</section>
+
+<balise id="makingof">
+<section class="encart padding-bottom odd">
+</balise>
+
+
+	<!-- <div class="spacer-small"></div>
+	<div class="spacer-small"></div> -->
+	<div class="spacer-small"></div>
+	<div class="spacer-small"></div>
+	<div class="container">
+
+		<h3 class="inter-titre title">
+
+			<b>Pourquoi s’intéresser aux données personnelles?</b>
+		</h3>
+
+		<p>Le rythme auquel les entreprises amassent, traitent et revendent les données personnelles s’est accéléré de manière spectaculaire. Des services anodins – écoute de musique, météo, jeux pour enfants sur smartphone – sont assortis de traceurs invisibles qui transmettent nos informations à des <i>data brokers</i>, des sociétés de revente de données.</p>
+		<p>En parallèle, de nombreuses entreprises se retrouvent à gérer des données numériques qui les dépassent, sans directives internes sur les questions de vie privée et sans réelle maîtrise de la manière dont leurs prestataires externes traitent ces données.</p>
+		<p>Quant aux utilisateurs, la plupart ne se doute pas de l’étendue de leurs traces numériques et ignorent leur droit de regard sur les données les concernant. Seule une poignée de personnes milite pour actionner le droit d’accéder, modifier ou supprimer les données collectées à leur sujet par des entreprises.</p>
+
+		<p><strong>Comment avons-nous procédé?</strong><br>
+
+		Après une conférence qui a fait salle comble en janvier, nous avons proposé à dix lectrices et lecteurs de faire valoir leurs droits dans ce domaine. Paul-Olivier Dehaye, expert en protection de la vie privée et fondateur de PersonalData.IO, nous a accompagné bénévolement tout au long du projet.</p>
+		<p>Comme le montre notre enquête, la procédure est fastidieuse. Trois rencontres ont été organisées à la rédaction pour faire le point avec les participants sur leurs démarches. Les discussions se prolongeaient par messagerie et sur <a href="https://forum.personaldata.io/c/enquete-le-temps/19">le forum de PersonalData.IO</a>. De nombreuses citations de cet article proviennent de ces échanges. Elles ont été reproduites avec l’accord de la participante ou du participant concerné.</p>
+		<p>Les points saillants identifiés par les participants ont fait l’objet d’un long travail de vérification. Nous avons contacté les entreprises concernées pour obtenir des précisions concernant leur politique de protection des données personnelles. Il est important de préciser qu’aucune n’a été préalablement choisie par notre rédaction. Ce sont les participants qui, selon leur présence numérique et leur sensibilité, ont pris la décision de contacter tel ou tel acteur économique.</p>
+
+		<p><strong>Que faut-il en retenir?</strong><br>
+		Malgré ses faiblesses, le droit d’accès permet d’observer la manière dont les entreprises traitent nos données personnelles. En pratique, rares sont celles qui répondent pleinement aux demandes d’accès. Souvent, les entreprises paraissent simplement dépassées par le volume des données qu’elles collectent.</p>
+		<p>Avec le renforcement des lois en matière de données personnelles, l’approche <i>privacy by design</i> (intégrer la protection de la vie privée dès la conception d’un service) gagne du terrain: enregistrer le strict nécessaire, déterminer des durées de conservation, limiter l’accès aux données personnelles. Mais cela représente un changement profond pour certaines sociétés.</p>
+
+		<p><strong>Quelles données avons-nous offertes aux géants en ligne?</strong><br>
+		Nous avons produit plus de cinquante échanges d’e-mails, hébergés en partie par Microsoft, fournisseur de Ringier Axel Springer, notre éditeur, et en partie sur Protonmail, qui propose un service de messagerie chiffrée. Ce texte a été coécrit par deux personnes sur Google Docs qui en a gardé plus de trente versions et sait précisément qui a ajouté, supprimé ou modifié une portion de texte et à quel moment. De nombreux échanges ont eu lieu sur la plateforme Slack, la messagerie instantanée utilisée au <i>Temps</i>.</p>
+
+		<p><strong>Quelles données avez-vous transmises?</strong><br>
+		Le texte que vous êtes en train de lire est hébergé sur notre serveur qui fait appel à plusieurs outils d’analyse, comme Parsely et Google Analytics, qui mesurent que vous êtes arrivé en bas de cette page. Ces statistiques nous permettent de juger du succès ou non de nos contenus éditoriaux et de la manière dont ils sont consultés. D’autres services se trouvent également sur cette page. En voici la liste:</p>
+
+		
+		<p style="padding-left: 30px;">- Maxcdn BootstrapCDN, qui appartient à Highwinds Network Group, une société d’hébergement américaine
+		<br>- CloudFlare, utilisé comme un réseau de diffusion de contenu (CDN, en anglais)
+		<br>- DigitalOcean, l’hébergeur de nos formats interactifs (labs.letemps.ch)
+		<br>- Fonts.googleapis, un service de Google qui permet d’utiliser des polices pour le texte
+		<br>- Wemfbox.ch, un outil de statistique pour la Suisse
+		<br>- Ajax.googleapis.com, une page sur laquelle on trouve des scripts qui sont inclus depuis les serveurs de Google
+		<br>- Cdnjs.cloudflare.com, des scripts qui sont inclus depuis les serveurs de CloudFlare
+		<br>- Unpkg.com, un script est inclus depuis ce domaine, qui est également servi par CloudFlare
+		<br>- Datawrapper.dwcdn.net, ce long format possède un graphique hébergé par le service Datawrapper
+		<br>- Un «Tag Manager», celui de Google. C’est un service qui permet d’inclure d’autres tags de traçage facilement
+		<br>- Get.contentpass.net, un script qui permet de détecter si l’utilisateur possède un adblocker
+		<br>- Ecure.adnxs.com / Aka-cdn-ns.adtech.de, un script pour faire du reciblage publicitaire
+		<br>- Un script de tracking de LinkedIn pour du reciblage publicitaire
+		<br>- Le Facebook Pixel pour du reciblage publicitaire</p>
+
+		<p class="encadre2" id="makingof-scrolltop" ><img src="img/article/arrow-icon.svg"><a href="#makingof-anchor">Revenir au récit</a></p>
+	</div>
+</section>
+
+{{ block('contrib_bloc') }}
+
+
+<footer>
+	<!-- <hr class="end"> -->
+	<div class="container">
+
+		<h5>Nos grands formats</h5>
+
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2020/longread-violence-conjugale/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-violence-conjugale.jpg');"></div>
+					<div class="caption">Violence conjugale: histoire d’une lutte sans fin</div>
+				</div>
+			</a>
+
+			<a href="https://labs.letemps.ch/interactive/2020/longread-roman-pandemie/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-roman.jpg');"></div>
+					<div class="caption">Le roman de la pandémie</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2016/longread-fioul-lourd/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb_fioul.jpg');"></div>
+					<div class="caption">Fioul lourd, le sang impur de la globalisation</div>
+				</div>
+			</a>
+
+			<a href="https://www.letemps.ch/grand-format/heninbeaumont-rassemblement-national-terrain-minier/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-henin-beaumont.jpg');"></div>
+					<div class="caption">A Hénin-Beaumont, le Rassemblement national en terrain minier</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2016/longread-gothard/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb_gothard.jpg');"></div>
+					<div class="caption">Les oubliés du Gothard</div>
+				</div>
+			</a>
+			<a href="https://labs.letemps.ch/interactive/2016/tchernobyl-30-ans/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-tchernobyl.jpg');"></div>
+					<div class="caption">30 ans après, voyage au cœur de la zone </div>
+				</div>
+			</a>
+		</div>
+
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2016/shenzhen/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb_shenzhen.jpg');"></div>
+					<div class="caption">Shenzhen, de la fumée des usines aux ateliers d'artistes</div>
+				</div>
+			</a>
+			<a href="https://labs.letemps.ch/interactive/2016/montre-suisse/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-montre.jpg');"></div>
+					<div class="caption">Comment j'ai fabriqué ma montre en 8 heures</div>
+				</div>
+			</a>
+
+		</div>
+
+	</div>
+
+	<div class="credits">
+		Texte: Florian Delafoi et Paul Ronga<br>
+		Webdesign et animation: César Greppin<br>
+		Coordination: Gaël Hurlimann
+	</div>
+</footer>
+
+{{ block('footer_brand') }}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<script src="js/jquery.lazyload.js?v=1.9.7"></script>
+<script src="js/intro-control.js"></script>
+<script src="js/viewport.js"></script>
+<!--<script src="js/timeline-control.js"></script>-->
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="js/jquery-glitch.js"></script>
+<script src="js/header-animation.js"></script>
+<script src="lib/three-last-min.js"></script>
+<script src="js/mgGlitch.js"></script>
+
+<!--<script src="js/video-control.js"></script>-->
+
+<!--<script src="js/hero-control.js"></script>-->
+
+<script src="js/zoom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+</body>
+</html>
